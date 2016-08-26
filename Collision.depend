@@ -418,3 +418,221 @@
 
 1391806732 z:\git\myparticlesys\source\window\content.h
 
+1472244861 source:e:\programozas\git\myparticlesys\source\main.cpp
+	<Utilities/VMath.h>
+	<Window/Window.h>
+	<Utilities/Texture.h>
+	<cstdio>
+	<Utilities/Shapes.h>
+	"Utilities/MyPoint2D.hpp"
+
+1472236042 e:\programozas\git\myparticlesys\\source\utilities\vmath.h
+	<cmath>
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\window.h
+	"Timer.h"
+	"Cursor.h"
+	"Keyboard.h"
+	"Content.h"
+	"Settings.h"
+	"Exception.h"
+	"OpenGL.h"
+	<Windows.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<string>
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\timer.h
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\cursor.h
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\keyboard.h
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\content.h
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\settings.h
+	<Windows.h>
+	<string>
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\exception.h
+
+1472236042 e:\programozas\git\myparticlesys\\source\window\opengl.h
+	<Windows.h>
+	"GL/gl.h"
+	"GL/glu.h"
+	"GL/glext.h"
+	"GL/wglext.h"
+
+1472236041 e:\programozas\git\myparticlesys\\include\gl\gl.h
+
+1472236041 e:\programozas\git\myparticlesys\\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+1472236041 e:\programozas\git\myparticlesys\\include\gl\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1472236041 e:\programozas\git\myparticlesys\\include\gl\wglext.h
+	<windows.h>
+
+1472236041 e:\programozas\git\myparticlesys\\include\al\al.h
+
+1472236041 e:\programozas\git\myparticlesys\\include\al\alc.h
+
+1472236042 e:\programozas\git\myparticlesys\\source\utilities\texture.h
+
+1472236041 e:\programozas\git\myparticlesys\\source\utilities\shapes.h
+	<Utilities/VMath.h>
+
+1472236041 e:\programozas\git\myparticlesys\source\utilities\mypoint2d.hpp
+	"MyVec2D.hpp"
+
+1472236041 e:\programozas\git\myparticlesys\source\utilities\myvec2d.hpp
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\quaternion.cpp
+	"Quaternion.h"
+
+1472236041 e:\programozas\git\myparticlesys\source\utilities\quaternion.h
+	"VMath.h"
+
+1472236042 e:\programozas\git\myparticlesys\source\utilities\vmath.h
+	<cmath>
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\shader.cpp
+	"Shader.h"
+	<Window/OpenGL.h>
+	<cstdio>
+
+1472236041 e:\programozas\git\myparticlesys\source\utilities\shader.h
+	<string>
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\shapes.cpp
+	"Shapes.h"
+	<Utilities/VMath.h>
+	<Window/OpenGL.h>
+
+1472236041 e:\programozas\git\myparticlesys\source\utilities\shapes.h
+	<Utilities/VMath.h>
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\font.cpp
+	"Font.h"
+	<Window/OpenGL.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+
+1472236041 e:\programozas\git\myparticlesys\source\utilities\font.h
+
+1472236041 e:\programozas\git\myparticlesys\\include\ft2build.h
+	<freetype/config/ftheader.h>
+
+1472236041 e:\programozas\git\myparticlesys\\include\freetype\config\ftheader.h
+
+1472236041 e:\programozas\git\myparticlesys\\include\freetype\freetype.h
+	<ft2build.h>
+
+1472236041 e:\programozas\git\myparticlesys\\include\freetype\ftglyph.h
+	<ft2build.h>
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\sound.cpp
+	"Sound.h"
+	<cstdio>
+	<AL/al.h>
+	<AL/alc.h>
+
+1472236041 e:\programozas\git\myparticlesys\source\utilities\sound.h
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\texture.cpp
+	"Texture.h"
+	<Window/OpenGL.h>
+	<FreeImage.h>
+
+1472236042 e:\programozas\git\myparticlesys\source\utilities\texture.h
+
+1472236041 e:\programozas\git\myparticlesys\\include\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1472236042 source:e:\programozas\git\myparticlesys\source\utilities\vmath.cpp
+	"VMath.h"
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\cursor.cpp
+	"Cursor.h"
+	<Windows.h>
+
+1472236042 e:\programozas\git\myparticlesys\source\window\cursor.h
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\exception.cpp
+	"Exception.h"
+
+1472236042 e:\programozas\git\myparticlesys\source\window\exception.h
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\keyboard.cpp
+	"Keyboard.h"
+	<Windows.h>
+
+1472236042 e:\programozas\git\myparticlesys\source\window\keyboard.h
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\opengl.cpp
+	"OpenGL.h"
+	<cstdio>
+
+1472236042 e:\programozas\git\myparticlesys\source\window\opengl.h
+	<Windows.h>
+	"GL/gl.h"
+	"GL/glu.h"
+	"GL/glext.h"
+	"GL/wglext.h"
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\resource.rc
+	"Resource.h"
+
+1472236042 e:\programozas\git\myparticlesys\source\window\resource.h
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\settings.cpp
+	"Settings.h"
+
+1472236042 e:\programozas\git\myparticlesys\source\window\settings.h
+	<Windows.h>
+	<string>
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\timer.cpp
+	"Timer.h"
+	<Windows.h>
+
+1472236042 e:\programozas\git\myparticlesys\source\window\timer.h
+
+1472236042 source:e:\programozas\git\myparticlesys\source\window\window.cpp
+	"Window.h"
+	"Resource.h"
+	<cstdio>
+
+1472236042 e:\programozas\git\myparticlesys\source\window\window.h
+	"Timer.h"
+	"Cursor.h"
+	"Keyboard.h"
+	"Content.h"
+	"Settings.h"
+	"Exception.h"
+	"OpenGL.h"
+	<Windows.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<string>
+
+1472236042 e:\programozas\git\myparticlesys\source\window\content.h
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\mypoint2d.cpp
+	"MyPoint2D.hpp"
+
+1472236041 source:e:\programozas\git\myparticlesys\source\utilities\myvec2d.cpp
+	"MyVec2D.hpp"
+	<cmath>
+

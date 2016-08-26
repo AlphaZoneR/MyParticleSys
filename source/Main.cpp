@@ -11,26 +11,26 @@ int WIDTH = 800;
 int HEIGTH = 600;
 
 int map[30][30] = {
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 	1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -46,15 +46,20 @@ int map[30][30] = {
 class Game : public Content {
     float x;
     MyPoint2D p;
-
+    bool first;
+    float squarew;
+    bool canjump;
     bool left, right;
 
     public:
 	Game() {
 	    x = 0;
-	    p = MyPoint2D(MyVec2D(32 * 5, 32 * 12));
+	    squarew = 32;
+	    p = MyPoint2D(MyVec2D(squarew * 5, squarew * 12));
 	    left = false;
 	    right = false;
+	    first = true;
+
 	}
 	virtual void Init() {
 		wglSwapIntervalEXT(true);
@@ -74,54 +79,60 @@ class Game : public Content {
 
 		// float tick = 1.0/60;//window->GetTick();
 		float tick = window->GetTick();
-		printf("%f\n", tick);
+		if(first){
+            tick = 1.0/60;
+            first = false;
+		}
 
-		int n = 1;
+        //printf("%f\n", tick);
+		int n = 2;
 		for (int i = 0; i < n; ++i) {
 			p.accelerate(MyVec2D(0, 2000));
-			p.simulate(tick / n);
+			p.simulate(tick);
+            p.previous.x += ((p.position.x - p.previous.x)/7);
+			{
+                int ix = (int)((p.position.x - 1)/ squarew);
+                int iy = (int)((p.position.y) / squarew);
+                printf("%d %d\n", ix,iy);
+                if(map[iy][ix]){
+                    p.position.x = ix * squarew + 1;
+                    p.previous.x = p.position.x;
+                }
+                ix = (int)((p.position.x)/ squarew);
+                iy = (int)((p.position.y) / squarew);
+                printf("%d %d\n", ix,iy);
+				if(map[iy+1][ix]){
+                    p.position.y = iy * squarew - 1;
+                    p.previous.y = p.position.y;
+                    canjump = true;
+				}
+				if(map[iy][ix+1]){
+                    p.position.x = ix * squarew - 1;
+                    p.previous.x = p.position.x;
+				}
+			}
 
-			{
-				int ix = (int)(p.position.x / 32);
-				int iy = (int)((p.position.y + 32) / 32);
-	
-				if (map[iy][ix]) {
-					p.position.y = iy * 32 - 32;
-					p.previous.y = p.position.y;
-				}
-			}
-			{
-				int ix = (int)((p.position.x + 32) / 32);
-				int iy = (int)((p.position.y + 32) / 32);
-	
-				if (map[iy][ix]) {
-					p.position.y = iy * 32 - 32;
-					p.previous.y = p.position.y;
-				}
-			}
+
+
+
 		}
 
 		if (window->GetKey('A') == KEY_DOWN) {
-			p.position.x -= 0.1 * 60;
-			p.previous.x -= 0.1 * 60;
+			p.position.x -= 0.5;
+			//p.previous.x += 0.5;
 		}
 
 		if (window->GetKey('D') == KEY_DOWN) {
-			p.position.x += 0.1 * 60;
-			p.previous.x += 0.1 * 60;
+			p.position.x += 0.5;
+			//p.previous.x -= 0.5;
 		}
 
-		if (window->GetKey('W') == KEY_PRESSED) {
+		if (window->GetKey('W') == KEY_PRESSED && canjump) {
 			p.previous.y += 10;
+			canjump = false;
 			// printf("OK\n");
 		}
 
-		// if (window->GetKey('W') == KEY_PRESSED) {
-		// 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-		// }
-		// if (window->GetKey('W') == KEY_RELEASED) {
-		// 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-		// }
 		if (window->GetKey(VK_HOME) == KEY_PRESSED) {
 			window->SwitchFullScreen();
 		}
@@ -137,7 +148,6 @@ class Game : public Content {
 		Window * window = Window::Instance();
 		int height = window->GetHeight();
 		int width = window->GetWidth();
-
 		glViewport(0, 0, width, height);
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
@@ -146,18 +156,32 @@ class Game : public Content {
 		glMatrixMode(GL_MODELVIEW);
 		glLoadIdentity();
 
+        for(int i = 0 ; i < 30 ; i++){
+            for(int j = 0 ; j < 30; j++){
+            glColor3ub(0, 0, 0);
+            glBegin(GL_LINES);
+                glVertex2f(i*squarew,j*squarew);
+                glVertex2f(i*squarew + squarew,j*squarew);
+            glEnd();
+            glColor3ub(0, 0, 0);
+            glBegin(GL_LINES);
+                glVertex2f(i*squarew,j*squarew);
+                glVertex2f(i*squarew,j*squarew + squarew);
+            glEnd();
+            }
+        }
 
 		glColor3ub(255, 0, 0);
 		for (int y = 0; y < 30; ++y) {
 			for (int x = 0; x < 30; ++x) {
 				if (map[y][x]) {
-					DrawRect(x * 32, y * 32, 32.0f,32.0f,1);
+					DrawRect(x * squarew, y * squarew, squarew,squarew,0);
 				}
 			}
 		}
 
 		glColor3ub(0, 255, 0);
-		DrawRect(p.position.x,p.position.y,32.0f,32.0f,1);
+		DrawRect(p.position.x,p.position.y,squarew,squarew,1);
 
 	}
 	virtual void Render() {
@@ -165,11 +189,14 @@ class Game : public Content {
 		Render2D();
 	}
 
+
 	void DrawRect(float x, float y, int width, int heigth,float edge){
-        glPushMatrix();
-        glTranslatef(x,y,0);
-        DrawRectangle(width,heigth,edge);
-        glPopMatrix();
+        glBegin(GL_TRIANGLE_STRIP);
+        glVertex2f(x,y);
+        glVertex2f(x,y+heigth);
+        glVertex2f(x+width,y);
+        glVertex2f(x+width,y+heigth);
+        glEnd();
 	}
 };
 
