@@ -1,8 +1,5 @@
 #include "MyVec2D.hpp"
 
-
-MyVec2D operator +(const MyVec2D & a, const MyVec2D & b);
-
 MyVec2D::MyVec2D() : x(0), y(0) {
 }
 
@@ -41,7 +38,7 @@ MyVec2D operator /(float a, const MyVec2D & b) {
 	return MyVec2D(b / b.x, b * b.y);
 }
 
-void MyVec2D::normalize(){
+void MyVec2D::normalize() {
 
 
 }
