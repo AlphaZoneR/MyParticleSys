@@ -46,13 +46,17 @@ void operator /=(MyVec2D & a, float b){
 	a = a / b;
 }
 
-void MyVec2D::normalize() {
-
-
+MyVec2D MyVec2D::normal() const {
+	return *this / length();
 }
 
+void MyVec2D::normalize() {
+	*this = *this / length();
+}
 
-
+void MyVec2D::length() const {
+	return sqrtf(x * x + y * y);
+}
 
 
 
