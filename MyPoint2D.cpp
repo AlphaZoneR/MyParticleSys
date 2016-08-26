@@ -1,3 +1,5 @@
+#include "MyPoint2D.hpp"
+
 MyPoint2D::MyPoint2D() {
 }
 
