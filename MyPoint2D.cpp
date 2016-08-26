@@ -27,5 +27,8 @@ void MyPoint2D::correct(const MyVec2D & vec) {
 }
 
 void MyPoint2D::simulate(float delta) {
-	//
+	MyVec2D new_position = position * 2 - previous + acceleration * delta * delta;
+	previous = position;
+	position = new_position;
+	acceleration = MyVec2D();
 }
