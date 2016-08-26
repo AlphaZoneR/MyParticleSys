@@ -1,3 +1,7 @@
+#include "MyPoint2D.hpp"
+
+#include "MyVec2D.hpp"
+
 class MyPoint2D {
 public:
 	MyVec2D position;
