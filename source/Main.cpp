@@ -57,7 +57,7 @@ class Game : public Content {
 	    right = false;
 	}
 	virtual void Init() {
-		wglSwapIntervalEXT(false);
+		wglSwapIntervalEXT(true);
 
 		glClearColor(0.75f, 0.75f, 0.75f, 1.0f);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -72,35 +72,47 @@ class Game : public Content {
 	virtual void Update() {
 		Window * window = Window::Instance();
 
-		float tick = 1/60//window->GetTick();
+		// float tick = 1.0/60;//window->GetTick();
+		float tick = window->GetTick();
+		printf("%f\n", tick);
 
 		int n = 1;
 		for (int i = 0; i < n; ++i) {
-			p.accelerate(MyVec2D(0, 9.87));
-			printf("%f\n", p.acceleration.y);
+			p.accelerate(MyVec2D(0, 2000));
 			p.simulate(tick / n);
 
-			int ix = (int)(p.position.x / 32);
-			int iy = (int)((p.position.y + 32) / 32);
-
-			// if (map[iy][ix]) {
-			// 	p.position.y = iy * 32 - 32;
-			// 	p.previous.y = p.position.y;
-			// }
+			{
+				int ix = (int)(p.position.x / 32);
+				int iy = (int)((p.position.y + 32) / 32);
+	
+				if (map[iy][ix]) {
+					p.position.y = iy * 32 - 32;
+					p.previous.y = p.position.y;
+				}
+			}
+			{
+				int ix = (int)((p.position.x + 32) / 32);
+				int iy = (int)((p.position.y + 32) / 32);
+	
+				if (map[iy][ix]) {
+					p.position.y = iy * 32 - 32;
+					p.previous.y = p.position.y;
+				}
+			}
 		}
 
 		if (window->GetKey('A') == KEY_DOWN) {
-			p.position.x -= 0.1;
-			p.previous.x -= 0.1;
+			p.position.x -= 0.1 * 60;
+			p.previous.x -= 0.1 * 60;
 		}
 
 		if (window->GetKey('D') == KEY_DOWN) {
-			p.position.x += 0.1;
-			p.previous.x += 0.1;
+			p.position.x += 0.1 * 60;
+			p.previous.x += 0.1 * 60;
 		}
 
 		if (window->GetKey('W') == KEY_PRESSED) {
-			p.previous.y += 0.1;
+			p.previous.y += 10;
 			// printf("OK\n");
 		}
 
