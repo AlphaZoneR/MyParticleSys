@@ -3,7 +3,6 @@
 #include <Utilities/Texture.h>
 #include <cstdio>
 #include <Utilities/Shapes.h>
-#include <Utilities/MyVec.h>
 using namespace wnd;
 using namespace util;
 
@@ -16,7 +15,6 @@ int HEIGTH = 600;
 
 class Game : public Content {
     float x;
-    MyVec * a;
 
 public:
 	Game() {
@@ -32,7 +30,6 @@ public:
 		glEnable(GL_POINT_SMOOTH);
 		glEnable(GL_LINE_SMOOTH);
 		glEnable(GL_BLEND);
-		a = new MyVec(10,20);
 	}
 	virtual void Update() {
 		Window * window = Window::Instance();

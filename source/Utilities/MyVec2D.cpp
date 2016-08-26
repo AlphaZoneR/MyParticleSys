@@ -1,6 +1,11 @@
 #include "MyVec2D.hpp"
 
+#include <cmath>
+
 MyVec2D::MyVec2D() : x(0), y(0) {
+}
+
+MyVec2D::MyVec2D(float x, float y) : x(x), y(y) {
 }
 
 MyVec2D::MyVec2D(const MyVec2D & copy) : x(copy.x), y(copy.y) {
@@ -20,7 +25,6 @@ void operator -=(MyVec2D & a, const MyVec2D & b) {
 MyVec2D operator -(const MyVec2D & a, const MyVec2D & b) {
 	return MyVec2D(a.x - b.x, a.y - b.y);
 }
--
 
 MyVec2D operator *(const MyVec2D & a, float b) {
 	return MyVec2D(a.x * b, a.y * b);
@@ -32,10 +36,6 @@ MyVec2D operator *(float a, const MyVec2D & b) {
 
 MyVec2D operator /(const MyVec2D & a, float b) {
 	return MyVec2D(a.x / b, a.y / b);
-}
-
-MyVec2D operator /(float a, const MyVec2D & b) {
-	return MyVec2D(b / b.x, b * b.y);
 }
 
 void operator *=(MyVec2D & a, float b){
@@ -54,7 +54,7 @@ void MyVec2D::normalize() {
 	*this = *this / length();
 }
 
-void MyVec2D::length() const {
+float MyVec2D::length() const {
 	return sqrtf(x * x + y * y);
 }
 
