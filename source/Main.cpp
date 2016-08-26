@@ -3,6 +3,7 @@
 #include <Utilities/Texture.h>
 #include <cstdio>
 #include <Utilities/Shapes.h>
+#include "Utilities/MyPoint2D.hpp"
 using namespace wnd;
 using namespace util;
 
@@ -11,18 +12,16 @@ int HEIGTH = 600;
 
 
 
-
-
 class Game : public Content {
     float x;
-
-public:
+    MyPoint2D p;
+    public:
 	Game() {
 	    x = 0;
 	}
 	virtual void Init() {
-		wglGetSwapIntervalEXT(true);
-		
+		wglSwapIntervalEXT(false);
+
 		glClearColor(0.75f, 0.75f, 0.75f, 1.0f);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		glAlphaFunc(GL_GREATER, 0.0f);
@@ -50,7 +49,7 @@ public:
 		if (window->GetKey(VK_ESCAPE) == KEY_PRESSED) {
 			window->CloseWindow();
 		}
-		x+= 0.1;
+		x+= tick*100;
 		if(x > WIDTH){
             x = 0;
 		}
