@@ -10,14 +10,51 @@ using namespace util;
 int WIDTH = 800;
 int HEIGTH = 600;
 
-
+int map[30][30] = {
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+};
 
 class Game : public Content {
     float x;
     MyPoint2D p;
+
+    bool left, right;
+
     public:
 	Game() {
 	    x = 0;
+	    p = MyPoint2D(MyVec2D(32 * 5, 32 * 12));
+	    left = false;
+	    right = false;
 	}
 	virtual void Init() {
 		wglSwapIntervalEXT(false);
@@ -35,14 +72,44 @@ class Game : public Content {
 	virtual void Update() {
 		Window * window = Window::Instance();
 
-		float tick = window->GetTick();
+		float tick = 1/60//window->GetTick();
+
+		int n = 1;
+		for (int i = 0; i < n; ++i) {
+			p.accelerate(MyVec2D(0, 9.87));
+			printf("%f\n", p.acceleration.y);
+			p.simulate(tick / n);
+
+			int ix = (int)(p.position.x / 32);
+			int iy = (int)((p.position.y + 32) / 32);
+
+			// if (map[iy][ix]) {
+			// 	p.position.y = iy * 32 - 32;
+			// 	p.previous.y = p.position.y;
+			// }
+		}
+
+		if (window->GetKey('A') == KEY_DOWN) {
+			p.position.x -= 0.1;
+			p.previous.x -= 0.1;
+		}
+
+		if (window->GetKey('D') == KEY_DOWN) {
+			p.position.x += 0.1;
+			p.previous.x += 0.1;
+		}
 
 		if (window->GetKey('W') == KEY_PRESSED) {
-			glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+			p.previous.y += 0.1;
+			// printf("OK\n");
 		}
-		if (window->GetKey('W') == KEY_RELEASED) {
-			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-		}
+
+		// if (window->GetKey('W') == KEY_PRESSED) {
+		// 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		// }
+		// if (window->GetKey('W') == KEY_RELEASED) {
+		// 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		// }
 		if (window->GetKey(VK_HOME) == KEY_PRESSED) {
 			window->SwitchFullScreen();
 		}
@@ -63,10 +130,22 @@ class Game : public Content {
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
 
-		gluOrtho2D(0, width, 0, height);
+		gluOrtho2D(0, width, height, 0);
 		glMatrixMode(GL_MODELVIEW);
 		glLoadIdentity();
-		DrawRect(x,HEIGTH/2,32.0f,32.0f,1);
+
+
+		glColor3ub(255, 0, 0);
+		for (int y = 0; y < 30; ++y) {
+			for (int x = 0; x < 30; ++x) {
+				if (map[y][x]) {
+					DrawRect(x * 32, y * 32, 32.0f,32.0f,1);
+				}
+			}
+		}
+
+		glColor3ub(0, 255, 0);
+		DrawRect(p.position.x,p.position.y,32.0f,32.0f,1);
 
 	}
 	virtual void Render() {
