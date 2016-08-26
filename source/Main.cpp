@@ -21,6 +21,8 @@ public:
 	    x = 0;
 	}
 	virtual void Init() {
+		wglGetSwapIntervalEXT(true);
+		
 		glClearColor(0.75f, 0.75f, 0.75f, 1.0f);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		glAlphaFunc(GL_GREATER, 0.0f);
