@@ -19,5 +19,5 @@ MyVec2D operator *(float a, const MyVec2D & b);
 MyVec2D operator /(const MyVec2D & a, float b);
 MyVec2D operator /(float a, const MyVec2D & b);
 
-MyVec2D operator *=(const MyVec2D & a, float b); // TODO:
-MyVec2D operator /=(const MyVec2D & a, float b); // TODO:
+void operator *=(const MyVec2D & a, float b); // TODO:
+void operator /=(const MyVec2D & a, float b); // TODO:

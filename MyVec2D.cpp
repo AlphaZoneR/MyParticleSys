@@ -38,6 +38,14 @@ MyVec2D operator /(float a, const MyVec2D & b) {
 	return MyVec2D(b / b.x, b * b.y);
 }
 
+void operator *=(MyVec2D & a, float b){
+	a = a * b;
+}
+
+void operator /=(MyVec2D & a, float b){
+	a = a / b;
+}
+
 void MyVec2D::normalize() {
 
 
