@@ -1,0 +1,4 @@
+#include "Resource.h"
+
+RC_LARGE_ICON		ICON		"LargeIcon.ico"
+RC_SMALL_ICON		ICON		"SmallIcon.ico"

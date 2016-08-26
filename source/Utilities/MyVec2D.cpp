@@ -20,7 +20,7 @@ void operator -=(MyVec2D & a, const MyVec2D & b) {
 MyVec2D operator -(const MyVec2D & a, const MyVec2D & b) {
 	return MyVec2D(a.x - b.x, a.y - b.y);
 }
-
+-
 
 MyVec2D operator *(const MyVec2D & a, float b) {
 	return MyVec2D(a.x * b, a.y * b);

@@ -1,0 +1,215 @@
+# depslib dependency file v1.0
+1392147108 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\resource.rc
+	"Resource.h"
+
+1391904766 e:\programozas\graphics-v1.00\myprojects\collision\source\window\resource.h
+
+1472204135 source:e:\programozas\graphics-v1.00\myprojects\collision\source\main.cpp
+	<Utilities/VMath.h>
+	<Window/Window.h>
+	<Utilities/Texture.h>
+	<cstdio>
+	<Utilities/Shapes.h>
+	<Utilities/MyVec.h>
+
+1392203476 e:\programozas\graphics-v1.00\myprojects\collision\\source\utilities\vmath.h
+	<cmath>
+
+1392135176 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\window.h
+	"Timer.h"
+	"Cursor.h"
+	"Keyboard.h"
+	"Content.h"
+	"Settings.h"
+	"Exception.h"
+	"OpenGL.h"
+	<Windows.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<string>
+
+1392134246 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\timer.h
+
+1392133898 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\cursor.h
+
+1392134052 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\keyboard.h
+
+1391806732 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\content.h
+
+1391806766 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\settings.h
+	<Windows.h>
+	<string>
+
+1392134732 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\exception.h
+
+1392135304 e:\programozas\graphics-v1.00\myprojects\collision\\source\window\opengl.h
+	<Windows.h>
+	"GL/gl.h"
+	"GL/glu.h"
+	"GL/glext.h"
+	"GL/wglext.h"
+
+1228620734 e:\programozas\graphics-v1.00\myprojects\collision\\include\gl\gl.h
+
+1228620734 e:\programozas\graphics-v1.00\myprojects\collision\\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+1328083682 e:\programozas\graphics-v1.00\myprojects\collision\\include\gl\glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1327974778 e:\programozas\graphics-v1.00\myprojects\collision\\include\gl\wglext.h
+	<windows.h>
+
+1355265944 e:\programozas\graphics-v1.00\myprojects\collision\\include\al\al.h
+
+1355265944 e:\programozas\graphics-v1.00\myprojects\collision\\include\al\alc.h
+
+1392140168 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\font.cpp
+	"Font.h"
+	<Window/OpenGL.h>
+	<ft2build.h>
+	<freetype/freetype.h>
+	<freetype/ftglyph.h>
+
+1392140128 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\font.h
+
+1143242706 e:\programozas\graphics-v1.00\myprojects\collision\\include\ft2build.h
+	<freetype/config/ftheader.h>
+
+1385443928 e:\programozas\graphics-v1.00\myprojects\collision\\include\freetype\config\ftheader.h
+
+1385443928 e:\programozas\graphics-v1.00\myprojects\collision\\include\freetype\freetype.h
+	<ft2build.h>
+
+1385443928 e:\programozas\graphics-v1.00\myprojects\collision\\include\freetype\ftglyph.h
+	<ft2build.h>
+
+1392218724 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\quaternion.cpp
+	"Quaternion.h"
+
+1392218748 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\quaternion.h
+	"VMath.h"
+
+1392203476 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\vmath.h
+	<cmath>
+
+1392226966 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\shader.cpp
+	"Shader.h"
+	<Window/OpenGL.h>
+	<cstdio>
+
+1392226798 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\shader.h
+	<string>
+
+1392215456 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\shapes.cpp
+	"Shapes.h"
+	<Utilities/VMath.h>
+	<Window/OpenGL.h>
+
+1392215472 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\shapes.h
+	<Utilities/VMath.h>
+
+1392215432 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\sound.cpp
+	"Sound.h"
+	<cstdio>
+	<AL/al.h>
+	<AL/alc.h>
+
+1392215248 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\sound.h
+
+1392214614 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\texture.cpp
+	"Texture.h"
+	<Window/OpenGL.h>
+	<FreeImage.h>
+
+1392214564 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\texture.h
+
+1348470994 e:\programozas\graphics-v1.00\myprojects\collision\\include\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1392203728 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\vmath.cpp
+	"VMath.h"
+
+1392134584 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\cursor.cpp
+	"Cursor.h"
+	<Windows.h>
+
+1392133898 e:\programozas\graphics-v1.00\myprojects\collision\source\window\cursor.h
+
+1392134770 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\exception.cpp
+	"Exception.h"
+
+1392134732 e:\programozas\graphics-v1.00\myprojects\collision\source\window\exception.h
+
+1392134594 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\keyboard.cpp
+	"Keyboard.h"
+	<Windows.h>
+
+1392134052 e:\programozas\graphics-v1.00\myprojects\collision\source\window\keyboard.h
+
+1392135338 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\opengl.cpp
+	"OpenGL.h"
+	<cstdio>
+
+1392135304 e:\programozas\graphics-v1.00\myprojects\collision\source\window\opengl.h
+	<Windows.h>
+	"GL/gl.h"
+	"GL/glu.h"
+	"GL/glext.h"
+	"GL/wglext.h"
+
+1392134600 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\settings.cpp
+	"Settings.h"
+
+1391806766 e:\programozas\graphics-v1.00\myprojects\collision\source\window\settings.h
+	<Windows.h>
+	<string>
+
+1392134604 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\timer.cpp
+	"Timer.h"
+	<Windows.h>
+
+1392134246 e:\programozas\graphics-v1.00\myprojects\collision\source\window\timer.h
+
+1392134766 source:e:\programozas\graphics-v1.00\myprojects\collision\source\window\window.cpp
+	"Window.h"
+	"Resource.h"
+	<cstdio>
+
+1392135176 e:\programozas\graphics-v1.00\myprojects\collision\source\window\window.h
+	"Timer.h"
+	"Cursor.h"
+	"Keyboard.h"
+	"Content.h"
+	"Settings.h"
+	"Exception.h"
+	"OpenGL.h"
+	<Windows.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<string>
+
+1391806732 e:\programozas\graphics-v1.00\myprojects\collision\source\window\content.h
+
+1392214564 e:\programozas\graphics-v1.00\myprojects\collision\\source\utilities\texture.h
+
+1392215472 e:\programozas\graphics-v1.00\myprojects\collision\\source\utilities\shapes.h
+	<Utilities/VMath.h>
+
+1472205535 e:\programozas\graphics-v1.00\myprojects\collision\\source\utilities\myvec.h
+
+1472205546 source:e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\myvec.cpp
+	"MyVec.h"
+	<math.h>
+
+1472205535 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\myvec.h
+

@@ -1,0 +1,2 @@
+#define RC_LARGE_ICON	10001
+#define RC_SMALL_ICON	10002
