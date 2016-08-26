@@ -95,7 +95,7 @@ class Game : public Content {
                 int iy = (int)((p.position.y) / squarew);
                 printf("%d %d\n", ix,iy);
                 if(map[iy][ix]){
-                    p.position.x = ix * squarew + 1;
+                    p.position.x = ix * squarew + 1 + squarew;
                     p.previous.x = p.position.x;
                 }
                 ix = (int)((p.position.x)/ squarew);
