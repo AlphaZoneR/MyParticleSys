@@ -43,6 +43,10 @@
 		<Unit filename="source/Main.cpp" />
 		<Unit filename="source/Utilities/Font.cpp" />
 		<Unit filename="source/Utilities/Font.h" />
+		<Unit filename="source/Utilities/MyPoint2D.cpp" />
+		<Unit filename="source/Utilities/MyPoint2D.hpp" />
+		<Unit filename="source/Utilities/MyVec2D.cpp" />
+		<Unit filename="source/Utilities/MyVec2D.hpp" />
 		<Unit filename="source/Utilities/Quaternion.cpp" />
 		<Unit filename="source/Utilities/Quaternion.h" />
 		<Unit filename="source/Utilities/Shader.cpp" />

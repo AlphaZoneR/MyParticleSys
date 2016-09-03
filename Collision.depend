@@ -213,12 +213,13 @@
 
 1472205535 e:\programozas\graphics-v1.00\myprojects\collision\source\utilities\myvec.h
 
-1472219591 source:z:\git\myparticlesys\source\main.cpp
+1472862460 source:z:\git\myparticlesys\source\main.cpp
 	<Utilities/VMath.h>
 	<Window/Window.h>
 	<Utilities/Texture.h>
 	<cstdio>
 	<Utilities/Shapes.h>
+	"Utilities/MyPoint2D.hpp"
 
 1392203476 z:\git\myparticlesys\\source\utilities\vmath.h
 	<cmath>
@@ -633,6 +634,18 @@
 	"MyPoint2D.hpp"
 
 1472236041 source:e:\programozas\git\myparticlesys\source\utilities\myvec2d.cpp
+	"MyVec2D.hpp"
+	<cmath>
+
+1472217088 z:\git\myparticlesys\source\utilities\mypoint2d.hpp
+	"MyVec2D.hpp"
+
+1472219413 z:\git\myparticlesys\source\utilities\myvec2d.hpp
+
+1472217088 source:z:\git\myparticlesys\source\utilities\mypoint2d.cpp
+	"MyPoint2D.hpp"
+
+1472219413 source:z:\git\myparticlesys\source\utilities\myvec2d.cpp
 	"MyVec2D.hpp"
 	<cmath>
 
